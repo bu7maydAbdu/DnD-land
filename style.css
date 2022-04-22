@@ -25,14 +25,19 @@ input {
     border-radius: 25px;
     border: none;
     width: 200px;
+    outline: none;
 }
 
-button {
+button, #choice-of-card{
     padding: 10px;
     border-radius: 25px;
     border: none;
     cursor: pointer;
 }
+#choice-of-card {
+    width: 100px;
+}
+
 
 #info {
     position: absolute;

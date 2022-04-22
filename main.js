@@ -2,9 +2,10 @@ const button = document.querySelector("button")
 button.addEventListener("click", getFetch)
 
 function getFetch(){
-    const spellRequest = document.querySelector("input").value
+    const cardName = document.querySelector("input").value
+    const cardType = document.querySelector("#choice-of-card").value
 
-    const url = `https://www.dnd5eapi.co/api/spells/${spellRequest}`
+    const url = `https://www.dnd5eapi.co/api/${cardType}/${cardName}`
 
     fetch(url)
       .then(res => res.json()) // parse response as JSON

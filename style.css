@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+#search-bar {
+    position: absolute;
+    z-index: 1000;
+    left: 40%;
+    top: 20%;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    width: 200px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+#info {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    background-color: rgb(95, 3, 22);
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    border-radius: 25px;
+    color: white;
+}

@@ -36,7 +36,10 @@ button, #choice-of-card{
 }
 #choice-of-card {
     width: 100px;
+    outline: none;
+    text-align: center;
 }
+
 
 
 #info {
@@ -51,7 +54,12 @@ button, #choice-of-card{
     border-radius: 25px;
     color: white;
 }
+.hide-card {
+    display: none;
+}
 
 h2, h3, h4, p {
     margin-top: 10px;
 }
+
+

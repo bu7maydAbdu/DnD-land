@@ -1,6 +1,9 @@
 const button = document.querySelector("button")
 button.addEventListener("click", getFetch)
 
+const infoCard = document.querySelector("#info")
+infoCard.classList.add("hide-card")
+
 function getFetch(){
     const cardName = document.querySelector("input").value
     const cardType = document.querySelector("#choice-of-card").value
@@ -11,6 +14,8 @@ function getFetch(){
       .then(res => res.json()) // parse response as JSON
       .then(data => {
         console.log(data)
+        infoCard.classList.remove("hide-card")
+
         document.querySelector("h2").innerText = "Name:" + data.name
         document.querySelector("h3").innerText = "Class:" + " " + data.classes[0].name
         document.querySelector("h4").innerText = "subclass:" + " " + data.subclasses[0].name

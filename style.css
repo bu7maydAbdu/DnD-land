@@ -14,7 +14,7 @@ img {
     position: absolute;
     z-index: 1000;
     left: 35%;
-    top: 20%;
+    top: 25%;
     text-align: center;
     display: flex;
     justify-content: space-around;
@@ -24,7 +24,7 @@ input {
     padding: 10px;
     border-radius: 25px;
     border: none;
-    width: 200px;
+    width: 250px;
     outline: none;
 }
 
@@ -68,10 +68,33 @@ option {
     text-align: center;
     border-radius: 25px;
     color: white;
+    animation-duration: 0.5s;
+    animation-name: popIn;
+}
+@keyframes popIn {
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    }
 }
 .hide-card {
     display: none;
+    /* animation-duration: 0.5s;
+    animation-name: popOut; */
+
 }
+/* @keyframes popOut {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0.5);
+        display: none;
+
+    }
+} */
 
 h2, h3, h4, p {
     margin-top: 10px;
